@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Save tasks to local storage
-    const originalSaveTasks = () => {
+    const saveTasksWithoutSorting = () => {
         const tasks = [];
         document.querySelectorAll('.task').forEach(task => {
             const title = task.querySelector('span').textContent.split(' (Due: ')[0];
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const saveTasks = () => {
-        originalSaveTasks();
+        saveTasksWithoutSorting();
         sortTasksByDeadline();
     };
 
