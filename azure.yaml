@@ -1,0 +1,8 @@
+name: DemoToDo0407-N
+services:
+  DemoToDo0407-N:
+    project: .
+    language: js
+    host: appservice
+    azureResourceName: demo-todo0407-n
+    port: 3000
